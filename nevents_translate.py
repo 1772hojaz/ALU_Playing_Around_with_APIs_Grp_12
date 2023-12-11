@@ -246,4 +246,4 @@ if __name__ == "__main__":
   test.translate(
       from_lang="german",
       to_lang="french",
-      from_lang_text="Meine Freunden sind Abiodun, Excel, und Michael")
+      from_lang_text="Meine Freunden sind Eunice, Excel, und Peter")
