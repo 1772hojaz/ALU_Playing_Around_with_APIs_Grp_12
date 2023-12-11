@@ -1,6 +1,6 @@
 from nevents_translate import NeventsTranslate
 
-# create an object of the class NevetsTranslate
+# create an object of the class NeventsTranslate
 test = NeventsTranslate()
 test.translate(
     from_lang_text=
