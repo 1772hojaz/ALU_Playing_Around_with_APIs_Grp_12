@@ -1,1 +1,1 @@
-# Playing aound with APIs_Group 12
+# Playing around with APIs_Group 12
