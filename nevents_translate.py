@@ -162,3 +162,90 @@ class NeventsTranslate():
       response = response.json()["trans"]
       return response, 0
 
+  def translate(self,
+                from_lang="auto",
+                to_lang="auto",
+                from_lang_text="I auto detect the text if you don't specify"):
+    count = 1
+    if (from_lang == "auto"
+        and to_lang == "auto") or (from_lang in self.__language
+                                   and to_lang in self.__language):
+      f_language = from_lang
+      s_language = to_lang
+      t_text = from_lang_text
+      translation, status = self.__main_translate(f_language, s_language, t_text)
+      if status == 0:
+        print(translation)
+        return status
+      print(translation)
+      return status
+    while True:
+      if isinstance(from_lang, str):
+        if count % 4 == 0:
+          print("Here is a list of languages available:")
+          time.sleep(5)
+          os.system('clear')
+          print(list(self.__language.keys()), "\n")
+          from_lang = input(
+              "Enter The correct spelling of the first language: ")
+          count += 1
+        elif from_lang.capitalize() == "Chinese":
+          ask = int(input("Enter 0 for simplified or 1 for traditional: "))
+          f_language = "zh-CN" if ask == 0 else "zh-TW"
+          break
+        elif from_lang.capitalize() in self.__language:
+          f_language = self.__language[from_lang.capitalize()]
+          break
+        else:
+          from_lang = input(
+              "Enter The correct spelling of the first language: ")
+          count += 1
+      else:
+        from_lang = input(
+            "Enter language must be a text, enter the language first again: ")
+        count += 1
+    os.system("clear")
+    count = 1
+    while True:
+      if isinstance(to_lang, str):
+        if count % 4 == 0:
+          print("Here is a list of languages available:")
+          time.sleep(5)
+          os.system('clear')
+          print(list(self.__language.keys()), "\n")
+          to_lang = input(
+              "Enter The correct spelling of the second language: ")
+          count += 1
+        elif to_lang.capitalize() == "Chinese":
+          ask = int(input("Enter 0 for simplified or 1 for traditional: "))
+          s_language = "zh-CN" if ask == 0 else "zh-TW"
+          break
+        elif to_lang.capitalize() in self.__language:
+          s_language = self.__language[to_lang.capitalize()]
+          break
+        else:
+          to_lang = input(
+              "Enter The correct spelling of the second language: ")
+          count += 1
+      else:
+        to_lang = input(
+            "Enter language must be a text, enter the language second again: ")
+        count += 1
+    os.system("clear")
+    t_text = from_lang_text
+    translation, status = self.__main_translate(f_language, s_language, t_text)
+    if status == 0:
+      print(translation)
+      return status
+    print(translation)
+    return status
+
+
+if __name__ == "__main__":
+  test = NeventsTranslate()
+  test.translate(
+      from_lang="german",
+      to_lang="french",
+      from_lang_text="Meine Freunden sind Abiodun, Excel, und Michael")
+
+
