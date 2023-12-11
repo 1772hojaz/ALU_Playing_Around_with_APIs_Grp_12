@@ -6,7 +6,7 @@ import requests
 
 class NeventsTranslate():
 
-  def _init_(self):
+  def __init__(self):
     self.__url = "https://google-translate113.p.rapidapi.com/api/v1/translator/text"
     self.__headers = {
         "content-type": "application/x-www-form-urlencoded",
@@ -247,5 +247,3 @@ if __name__ == "__main__":
       from_lang="german",
       to_lang="french",
       from_lang_text="Meine Freunden sind Abiodun, Excel, und Michael")
-
-
