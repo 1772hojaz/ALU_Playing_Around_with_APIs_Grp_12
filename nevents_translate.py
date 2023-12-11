@@ -149,4 +149,16 @@ class NeventsTranslate():
         "Yoruba": "yo",
         "Zulu": "zu"
     }
-    
+
+  def __main_translate(self, f_language, s_language, t_text):
+    payload = {"from": f_language, "to": s_language, "text": t_text}
+    try:
+      response = requests.post(self.__url,
+                               data=payload,
+                               headers=self.__headers)
+    except requests.exceptions.RequestException as req_error:
+      return req_error, 1
+    else:
+      response = response.json()["trans"]
+      return response, 0
+
