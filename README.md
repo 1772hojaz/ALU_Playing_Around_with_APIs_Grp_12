@@ -1,5 +1,7 @@
 API-Driven Web Application
 
+![Project Preview](./images/example.py%20file.png)
+
 ## Group Members
 
 - Peter Johnson
@@ -42,7 +44,7 @@ pip install -r requirements.txt
 
 # Obtain API keys
 Sign up on RapidAPI to obtain an API key for the Google Translate API.
-Update the `X-RapidAPI-Key in the `nevents_translate.py file with your key.
+Update the `X-RapidAPI-Key` in the `nevents_translate.py` file with your key.
 ```
 
 ## Usage
