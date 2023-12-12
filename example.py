@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 from nevents_translate import NeventsTranslate
 
 # create an object of the class NeventsTranslate

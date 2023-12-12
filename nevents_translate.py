@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 import os
-import time
+import platform
 import requests
-
+import subprocess
+import time
 
 class NeventsTranslate():
 
@@ -184,7 +185,15 @@ class NeventsTranslate():
         if count % 4 == 0:
           print("Here is a list of languages available:")
           time.sleep(5)
-          os.system('clear')
+          operating_system = platform.system()
+
+          if operating_system == "Windows":
+              command = "cls"
+          else:
+              command = "clear"
+
+          # Use subprocess to run the command
+          subprocess.call(command, shell=True)
           print(list(self.__language.keys()), "\n")
           from_lang = input(
               "Enter The correct spelling of the first language: ")
@@ -204,14 +213,30 @@ class NeventsTranslate():
         from_lang = input(
             "Enter language must be a text, enter the language first again: ")
         count += 1
-    os.system("clear")
+    operating_system = platform.system()
+
+    if operating_system == "Windows":
+        command = "cls"
+    else:
+        command = "clear"
+
+    # Use subprocess to run the command
+    subprocess.call(command, shell=True)
     count = 1
     while True:
       if isinstance(to_lang, str):
         if count % 4 == 0:
           print("Here is a list of languages available:")
           time.sleep(5)
-          os.system('clear')
+          operating_system = platform.system()
+
+          if operating_system == "Windows":
+              command = "cls"
+          else:
+              command = "clear"
+
+          # Use subprocess to run the command
+          subprocess.call(command, shell=True)
           print(list(self.__language.keys()), "\n")
           to_lang = input(
               "Enter The correct spelling of the second language: ")
@@ -231,7 +256,15 @@ class NeventsTranslate():
         to_lang = input(
             "Enter language must be a text, enter the language second again: ")
         count += 1
-    os.system("clear")
+        operating_system = platform.system()
+
+        if operating_system == "Windows":
+            command = "cls"
+        else:
+            command = "clear"
+
+        # Use subprocess to run the command
+        subprocess.call(command, shell=True)
     t_text = from_lang_text
     translation, status = self.__main_translate(f_language, s_language, t_text)
     if status == 0:
