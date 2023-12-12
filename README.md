@@ -23,7 +23,7 @@
 
 ## Project Overview
 
-This project is a collaborative effort to design and develop a small web application that leverages external APIs to fetch and display relevant data. The primary focus is on functionality, utilizing APIs from various categories to demonstrate a range of capabilities.
+This project is a small application developed by Group 12 for the "Playing Around with APIs" assignment. The application incorporates external APIs to fetch and display relevant data. The focus is on demonstrating the use of various APIs and extending functionality to create a useful application.
 
 ## Features
 
