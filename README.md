@@ -1,4 +1,4 @@
-## API-Driven Web Application
+## ALU Playing Around with APIs - Group 12
 
 ![Project Preview](./images/example.py%20file.png)
 
