@@ -18,6 +18,7 @@ This project is a collaborative effort to design and develop a small web applica
 - Allowing user interaction with the displayed data (e.g., sorting).
 
 ## Usage
+The video would explain in detail the workings of the app.
 
 ## Getting Started
 
@@ -28,7 +29,7 @@ Follow these steps to get a copy of the project up and running on your local mac
 git clone https://github.com/1772hojaz/ALU_Playing_Around_with_APIs_Grp_12.git
 
 # Navigate to the project directory
-cd yourproject
+cd ALU_Playing_Around_with_APIs_Grp_12.git
 
 # Install dependencies
 npm install
