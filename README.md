@@ -2,6 +2,18 @@
 
 ![Project Preview](./images/example.py%20file.png)
 
+## Table of Contents
+
+- [Group Members](#group-members)
+- [Project Overview](#project-overview)
+- [Features](#features)
+- [APIs Used](#apis-used)
+- [Demo](#demo)
+- [Implementation](#implementation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [Contact Information](#contact-information)
+
 ## Group Members
 
 - Peter Johnson
@@ -9,7 +21,7 @@
 - Excel Asaph
 - Humphrey Nyahoja
 
-## Overview
+## Project Overview
 
 This project is a collaborative effort to design and develop a small web application that leverages external APIs to fetch and display relevant data. The primary focus is on functionality, utilizing APIs from various categories to demonstrate a range of capabilities.
 
@@ -27,7 +39,7 @@ The application utilizes the Google Translate API from [RapidAPI](https://rapida
 
 The video would explain in detail the workings of the app. Check out our [demo video](https://www.loom.com/share/60e79520707b4ca59752a639647cc6ac?sid=7b7f1d01-8de4-46e5-b158-379894d574e9) for a quick overview of how to use the application.
 
-## Getting Started
+## Implementation
 
 Follow these steps to get a copy of the project up and running on your local machine:
 
@@ -62,3 +74,7 @@ Follow the prompts to specify the source language, target language, and input te
 
 We welcome contributions!
 If you'd like to contribute to this project, please follow the normal contribution guidelines.
+
+## Contact Information
+
+For inquiries and support, feel free to contact our team at [e.adewusi@alustudent.com].
